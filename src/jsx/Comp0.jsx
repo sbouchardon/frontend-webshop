@@ -4,16 +4,6 @@ import Card from './Card.jsx';
 
 export default function Comp0() {
 
-  const bgColors = ['bg-beige', 'bg-gold', 'bg-red'];
-  const [currentColorIndex, setCurrentColorIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentColorIndex((prev) => (prev + 1) % bgColors.length);
-    }, 2000); // Change color every 2 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>

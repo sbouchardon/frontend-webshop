@@ -49,7 +49,7 @@
 /* Card Styles */
 
 .card {
-  @apply flex flex-col max-w-sm w-full rounded-md bg-beige shadow-md overflow-hidden;
+  @apply flex flex-col max-w-sm w-full rounded-md bg-grey shadow-md overflow-hidden;
 }
 
 .cardImage {
@@ -69,12 +69,6 @@
   @apply inline-flex items-center justify-center cursor-pointer font-bold transition-all duration-200 px-5 py-2.5 rounded-full bg-dune text-beige border border-transparent text-[15px]
          hover:bg-[#1B2328] active:scale-95 active:bg-black active:text-white;
 }
-
-
-
-
-
-
 
 .nav-button {
   @apply w-[30px] h-[50px] block mx-auto p-0 border-none flex items-center justify-center hover:scale-95 cursor-pointer;
