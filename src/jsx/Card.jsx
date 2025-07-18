@@ -6,22 +6,12 @@ import Info from './Info.jsx';
 export default function Card(props) {
 
     const [like, setLike] = useState(false);
-    const [cart, setCart] = useState(false);
     const [showInfo, setShowInfo] = useState(false);
 
     const updateLike = () => {
         setLike(prev => !prev);
         
         if(!like){
-            setShowInfo(true); // Show the info message
-        }
-        
-    };
-
-    const updateCart = () => {
-        setCart(prev => !prev);
-        
-        if(!cart){
             setShowInfo(true); // Show the info message
         }
         
@@ -59,12 +49,12 @@ export default function Card(props) {
                     <div className="relative flex h-20 items-center justify-between">
                         <div className="p-4">
                             <button onClick={updateLike}>
-                                <img className="nav-button" src={like ? "/liked.svg" : "/like.svg"} alt="like" />
+                                <img className="nav-button" src={like ? "/liked.svg" : "/like2.svg"} alt="like" />
                             </button>
                         </div>
 
                         <div className="p-4">
-                            <button className="button" onClick={updateCart}>
+                            <button className="button">
                                 Add to cart
                             </button>
                         </div>
